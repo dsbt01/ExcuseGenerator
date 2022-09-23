@@ -23,10 +23,10 @@ function GenerateRandomNumberOnRange(MinNumber, MaxNumber) {
 function BuildTheExcuse() {
   var result = "";
 
-  let randomWho = who[GenerateRandomNumberOnRange(0, 3)];
-  let randomAction = action[GenerateRandomNumberOnRange(0, 3)];
-  let randomWhat = what[GenerateRandomNumberOnRange(0, 2)];
-  let randomWhen = when[GenerateRandomNumberOnRange(0, 4)];
+  let randomWho = who[GenerateRandomNumberOnRange(0, (who.length - 1))];
+  let randomAction = action[GenerateRandomNumberOnRange(0, (action.length - 1))];
+  let randomWhat = what[GenerateRandomNumberOnRange(0, (what.length - 1))];
+  let randomWhen = when[GenerateRandomNumberOnRange(0, (when.length - 1))];
 
   result = `${randomWho} ${randomAction} ${randomWhat} ${randomWhen}`;
 
